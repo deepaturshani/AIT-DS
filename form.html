@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Booking</title>
+        <style type="text/css">
+
+
+h3{
+	line-height: 110%;
+	padding: 5% 0;
+
+}
+
+p{
+	padding: 1%;
+}
+
+section {
+	width: 29%;
+	float: left;
+
+	text-align: center;
+}
+
+footer {
+	background: #333333;
+	width: 100%;
+	
+	overflow: hidden;
+	opacity: 0.90;
+}
+
+footer p,footer h3 {
+	color: #FFF;
+}
+footer p a {
+	color: #FFF;
+	text-decoration: none;
+}
+ul.social li {
+	display: inline;
+}
+ul.social li img {
+	height: 50px;
+
+}
+footer.second {
+	border-top: 1 px solid #4D4E50;
+	background-color: #333333;
+	max-height: 50px;
+	text-align: center;
+	opacity: 0.95;
+}
+
+/*-------------------------------------MEDIA!!!---------------------------------*/
+@media screen and (max-width: 478px)
+{
+	body {
+		position: absolute;
+	}
+
+}
+
+@media screen and (max-width: 740px)
+{
+	
+	section {
+		float: left;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		
+	}
+}
+
+   
+
+
+.form input {
+  font-family: "Times New Roman", sans-serif;
+  outline: 0;
+  background:#FFFAFA;
+  width: 20%;
+   border: 1px solid black;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+ button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #0000FF;
+  width: 20%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  cursor: pointer;
+
+.h2 {
+    color: #FFFFFF;
+}
+
+
+</style>
+
+    </head>
+    <body bgcolor=" #F6F1EC">
+	     <div class="form">
+           
+       <form action="newoffer.html" method="POST">
+          
+            <label for="name"><h2>Username: </label><input type="text" name="username" id="name"  placeholder="your username" pattern="[a-zA-Z]{3,}" title="required field" reqired></h2><br>
+            <label for="email"><h2>Email: </label><input type="email" name="email" id="email" placeholder="your email" pattern="[a-zA-Z]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}" title="please enter in a valid email address" required></h2><br>
+            <label for="phone"><h2>Phone: </label><input type="tel" name="phone" id="phone" placeholder=" phone number" pattern="[0-9]{4} [0-9]{3} [0-9]{3}" title="please enter in a  phone number in this format:#### ### ###" required></h2><br>
+            <h2>Select Hotel:</h2> 
+             <select >
+    <option value=""></option>
+    <option value="1">Taj Mahal Hotel, Delhi</option>  
+    <option value="2">The Oberoi Rajvilas</option>
+    <option value="3">Lake Palace</option>
+    <option value="4">The Oberoi Amarvilas</option>
+    <option value="5">The Oberoi Udaivilas</option>
+    <option value="6">The Oberoi, Gurgaon</option>
+    <option value="7">Sofitel Mumbai BKC</option>
+    <option value="8">The Leela Ambience Delhi</option>
+	<option value="9">Panchavatti, Goa</option>
+	<option value="10">Hotel Airport International, Mumbai</option>
+
+</select><br>
+			<h2> Booking Dates:</h2>
+            <h2>From: <input type="date" name="startdate" min="2014-01-20" reqired> To: <input type="date"   min="2014-01-20" required ></h2>
+             <h2>Rooms Available:</h2> 
+             <select >
+    <option value=""></option>
+    <option value="1">GUEST ROOM</option>  
+    <option value="2">SINGLE ROOM</option>
+    <option value="3">DOUBLE ROOM</option>
+    <option value="4">TWIN ROOM</option>
+    <option value="5">INTERCONNECTING ROOM</option>
+    <option value="6">DUPLEX ROOM</option>
+    <option value="7">CABANA ROOM</option>
+
+</select><br>
+ <label for="rooms"><h2>How many rooms do you want: </label><input  type="number" name="numberofrooms" min="1" max="5" required> </h2><br><br>
+<button>Next</button>
+           
+       </form>
+          </div><br> <br><br><br>
+		  <footer>
+	<section>
+	<h3><b>Best Hotel Deals</b></h3>
+	<p><b>123-555-5555</b><br><br>
+	Chembur,Mumbai-89</p>
+	</section>
+	<section>
+		<h3> Connect With Us! </h3>
+		<ul class="social">
+		<li><a href="#"><img src="fb.jpg" /></a></li>
+		<li><a href="#"><img src="gp.jpg" /></a></li>
+        <li><a href="#"><img src="tw.jpg" /></a></li>
+        </ul>
+	</section>
+</footer>
+<footer class="second">
+	<p> @Copyright- Best Hotel Deals,2017 </p>
+</footer>
+	 </body>
+</html>
+
